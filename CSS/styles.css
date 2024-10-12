@@ -66,6 +66,7 @@ h1 {
     transition: opacity 2s ease-out;
 }
 
+
 .scroll-area {
     width: 100vw;
     height: 100vh;
@@ -80,10 +81,18 @@ h1 {
     font-size: 1.8em;
     opacity: 0;
     transition: opacity 1s ease-out;
+    margin-top: 10%;
 
 }
 
 @media screen and (max-width: 1452px) {
+    .scroll-area {
+        margin-top: 10%;
+
+    }
+}
+
+@media screen and (max-height: 950px) {
     .scroll-area {
         margin-top: 10%;
 
@@ -98,10 +107,18 @@ h1 {
     }
 }
 
+@media screen and (max-height: 800px) {
+    .scroll-area {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 
 .scroll-area.visible {
     opacity: 1;
 }
+
 
 .scroll-area img {
     max-width: 50%;
@@ -115,7 +132,15 @@ h1 {
     flex-wrap: nowrap;
     flex-direction: column; 
     justify-content: center;
-    padding: 5%; 
+    padding: 3%; 
+    background-color: rgba(240, 248, 255, 0.116);
+}
+
+@media screen and (max-width: 1452px) {
+    .textscroll-side {
+        margin-top: 15%;
+
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -125,10 +150,14 @@ h1 {
     }
 }
 
+@media screen and (max-height: 950px) {
+    .textscroll-side {
+        margin-top: 10%;
+
+    }
+}
+
 
 .scroll-area p {
     max-width: 100%; 
 }
-
-
-
